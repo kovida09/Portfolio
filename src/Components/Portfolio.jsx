@@ -1,3 +1,4 @@
+
 /**
  * Portfolio component
  *
@@ -19,7 +20,8 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/p.jpg";
+backgroundColor:"black"
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,37 +33,44 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Food Delivery App",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "From Kitchen to Your Doorstep: Effortless Dining Experience",
+    url: "https://github.com/kovida09/Food-Delivery-WebApp-using-MERN?tab=readme-ov-file#food-delivery-webapp-using-mern-1",
   },
   {
-    title: "Web Development for Beginners",
+    title: "PROJECT-2",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Forecasting friendships, predicting paths ahead. Navigate networks with precision, connect with confidence.",
+    url: "https://github.com/kovida09/Prediction-of-social-network-",
   },
   {
-    title: "My Resume Site",
+    title: "Resume",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "My career narrative, perfectly crafted.Showcasing your skills, achievements, and ambition.",
+    url: "https://drive.google.com/file/d/1Sjr4HuoCK4wJeU_ZfkGSrvLW9l-jlZs_/view?usp=sharing",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Are u a Tech geek?",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Exploring the forefront of technology.Unveiling innovation, one byte at a time",
+    url: "https://techcrunch.com/",
   },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+      <h1 style={{ textAlign: "center" ,font: " caption",fontWeight: "bold",fontSize: "3rem"}}>PORTFOLIO</h1>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          paddingTop: "1rem",
+          backgroundColor: "black",
+        }}
+      >
+        <div style={{ maxWidth: "50%", alignSelf: "center" }}>
           <img
             src={image}
             style={{ height: "90%", width: "100%", objectFit: "cover" }}
@@ -72,7 +81,7 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 style={{ flexBasis: "90px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
             </div>

@@ -16,7 +16,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/desktop-wallpaper-portfolio.jpg";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -24,19 +24,19 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a backend developer. I specialize in building the behind-the-scenes magic of websites and apps—handling databases and making sure everything runs smoothly so users have a seamless experience.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Backend Developer",
+  "Problem-Solving",
+  "Content Writter",
+  "Web Layout",
+  "Data Analytics",
+
 ];
 
 /**
@@ -45,19 +45,21 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+ "I am a creative and detail-oriented developer with a passion for crafting robust backend solutions. With a solid background in Node.js, Python (Django), I excel in designing scalable architectures and implementing efficient APIs that power seamless user experiences. I thrive on tackling complex challenges, whether optimizing database performance or integrating cutting-edge technologies. My dedication to continuous improvement and collaborative spirit ensures that I deliver innovative solutions that make a meaningful impact.";
 
 const About = () => {
   return (
     <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
+      <img className="background" src={image} alt="Motion Background" />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "black",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          borderRadius: "20px",
+          color:"white"
         }}
       >
         <h2>About Myself</h2>
@@ -70,6 +72,7 @@ const About = () => {
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
+            color:"white"
           }}
         >
           {skillsList.map((skill) => (
@@ -77,7 +80,7 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{ padding: "1rem 0rem 0" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
